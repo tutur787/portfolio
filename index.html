@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur Acker — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top" aria-label="Go to top">Arthur Acker</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="badge">Applied Data Science • Analytics • Sports Analytics</p>
+          <h1>Hi, I'm <span class="accent">Arthur Acker</span>.</h1>
+
+          <p class="subtitle">
+            Data scientist & analytics professional with a strong foundation in statistics, machine learning,
+            and data engineering. I build data products that turn messy data into clear decisions—especially
+            in sports performance and operational efficiency.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn btn-ghost" href="https://github.com/tutur787?tab=repositories" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/arthur-acker-097a0a202/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <div class="stat-num">UChicago ’26</div>
+              <div class="stat-label">MS Applied Data Science</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Python • R • SQL</div>
+              <div class="stat-label">Core stack</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Open</div>
+              <div class="stat-label">To relocation</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card profile-card">
+          <img class="avatar" src="arthur-acker.jpg" alt="Arthur Acker headshot" style="object-fit: cover; object-position: top;" />
+          <div>
+            <h2 class="card-title">Arthur Acker</h2>
+            <p class="muted">M.S. Applied Data Science (Expected Aug 2026)</p>
+          </div>
+
+          <div class="chip-row">
+            <span class="chip">Data Engineering</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Dashboards</span>
+            <span class="chip">Sports Analytics</span>
+          </div>
+
+          <a class="btn btn-small" href="resume.pdf" target="_blank" rel="noreferrer">Open Resume (PDF)</a>
+          <p class="muted tiny" style="margin: 0;">Open to relocation</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Selected work (more on GitHub).</p>
+        </header>
+
+        <div class="grid">
+          <article class="card project">
+            <header class="card-head">
+              <h3>Endurance Analytics Dashboard (Strava)</h3>
+              <div class="links">
+                <a href="https://github.com/tutur787/Strava-Dashboard" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              Streamlit dashboard that pulls Strava activity data and analyzes training load, fatigue/readiness,
+              and race predictions using explainable rules + time-series analytics.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Strava API</span>
+              <span class="chip">Time Series</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>Safest Route Directions — Hackathon (Bee Safe)</h3>
+              <div class="links">
+                <a href="https://github.com/SamuelBeaudoin/Bee_Safe" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              Bee Safe is a web application designed to enhance safety awareness and route planning in Montreal.
+              Using a map interface with hex overlays representing safety zones, it helps users choose routes based
+              on safety considerations.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Dash</span>
+              <span class="chip">Maps</span>
+              <span class="chip">Graph Algorithms</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>Twitter Bot Detector</h3>
+              <div class="links">
+                <a href="https://github.com/tutur787/bot_detector" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              NLP + clustering approach to identify bots injected into a tweet dataset (features like cosine similarity,
+              profanity filtering, emoji detection, and grammar signals). Reported ~90% accuracy.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">NLP</span>
+              <span class="chip">Clustering</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>NASA Space Apps: Asteroid Impact Simulator</h3>
+              <div class="links">
+                <a href="https://github.com/tutur787/SpaceAppsChallenge" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              Streamlit educational app to explore asteroid impact scenarios with “confidence level” guardrails,
+              plus optional NASA feeds integration for current events/context.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Education</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>Taylor Swift Media Analysis</h3>
+              <div class="links">
+                <a href="https://github.com/NxRd01/COMP370-project/tree/main" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              Analysis of Taylor Swift’s media presence using web scraping and NLP to identify trends and patterns.
+              For details, see the written report in the repo.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">Web Scraping</span>
+              <span class="chip">NLP</span>
+            </div>
+          </article>
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>More on GitHub</h3>
+              <div class="links">
+                <a href="https://github.com/tutur787?tab=repositories" target="_blank" rel="noreferrer">All repos</a>
+              </div>
+            </header>
+
+            <p class="muted">
+              See additional repositories (e.g., Sports-Data-Copilot and other experiments).
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">R</span>
+              <span class="chip">HTML/CSS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Experience</h2>
+          <p class="muted">Recent roles and impact.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card">
+            <header class="card-head">
+              <div>
+                <h3>Hutchinson Trenton — Data/Analytics Intern</h3>
+                <p class="muted">Sep 2024 – Aug 2025</p>
+              </div>
+            </header>
+
+            <ul class="bullet-list">
+              <li>Database interface rebuild used by 20+ engineers.</li>
+              <li>Query + indexing optimization: ~90s → &lt;10s search latency.</li>
+              <li>Integrity + debugging scripts: improved maintainability and reduced downtime.</li>
+            </ul>
+
+            <div class="chip-row">
+              <span class="chip">SQL</span>
+              <span class="chip">Python</span>
+              <span class="chip">Database Design</span>
+              <span class="chip">Performance Tuning</span>
+              <span class="chip">Data Engineering</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <div>
+                <h3>Hutchinson Burbank — Data/Analytics Intern</h3>
+                <p class="muted">May 2024 – Aug 2024</p>
+              </div>
+            </header>
+
+            <ul class="bullet-list">
+              <li>Unified ERP + QMS data, improving cross-team accuracy by 35%.</li>
+              <li>Built a Python interface to convert raw data into structured insights.</li>
+              <li>Increased workflow visibility and supported faster decision-making.</li>
+            </ul>
+
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">ERP</span>
+              <span class="chip">QMS</span>
+              <span class="chip">Data Integration</span>
+              <span class="chip">Business Intelligence</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <header class="card-head">
+              <div>
+                <h3>Hutchinson Burbank — IT Intern</h3>
+                <p class="muted">Jul 2022</p>
+              </div>
+            </header>
+
+            <ul class="bullet-list">
+              <li>Implemented a Redmine-based ticketing system for NA IT teams.</li>
+              <li>Automated email ingestion (IMAP/POP3), improving response efficiency by ~30%.</li>
+            </ul>
+
+            <div class="chip-row">
+              <span class="chip">Redmine</span>
+              <span class="chip">Automation</span>
+              <span class="chip">Python</span>
+              <span class="chip">IMAP</span>
+              <span class="chip">POP3</span>
+              <span class="chip">IT Support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>About</h2>
+          <p class="muted">
+            I’m a Master’s student in Applied Data Science at the University of Chicago (Expected Aug 2026),
+            building on a B.Sc. in Statistics & Computer Science from McGill (2021–2025).
+          </p>
+          <p class="muted">
+            I’m passionate about the intersection of data and technology to solve complex problems.
+            I learn quickly, enjoy collaborating, and I’m always looking for new challenges.
+          </p>
+        </div>
+
+        <aside class="card">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li><span>Programming</span><span class="muted">Python, R, SQL, Bash, Java, HTML, CSS</span></li>
+            <li><span>ML</span><span class="muted">scikit-learn, TensorFlow, PyTorch</span></li>
+            <li><span>Data / BI</span><span class="muted">Tableau, Power BI, Matplotlib</span></li>
+            <li><span>Databases</span><span class="muted">PostgreSQL, MySQL</span></li>
+            <li><span>Statistics</span><span class="muted">Regression, Time Series, GLMs, Bayesian</span></li>
+            <li><span>Languages</span><span class="muted">French (Native), English (Fluent), Spanish (Intermediate)</span></li>
+          </ul>
+
+          <div class="cta-row" style="margin-top: 14px;">
+            <a class="btn btn-ghost btn-small" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Best way to reach me:</p>
+        </header>
+
+        <div class="contact-card card">
+          <div class="contact-row">
+            <div>
+              <div class="label">Email</div>
+              <a href="mailto:arthuracker07@gmail.com">arthuracker07@gmail.com</a>
+            </div>
+            <div>
+              <div class="label">Phone</div>
+              <a href="tel:+18182095050">(818) 209-5050</a>
+            </div>
+          </div>
+
+          <div class="contact-row" style="margin-top: 14px;">
+            <div>
+              <div class="label">GitHub</div>
+              <a href="https://github.com/tutur787?tab=repositories" target="_blank" rel="noreferrer">github.com/tutur787</a>
+            </div>
+            <div>
+              <div class="label">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/arthur-acker-097a0a202/" target="_blank" rel="noreferrer">
+                linkedin.com/in/arthur-acker-097a0a202
+              </a>
+            </div>
+          </div>
+
+          <p class="muted tiny" style="margin-top: 14px;">
+            © <span id="year"></span> Arthur Acker • Built with HTML & CSS
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted tiny">Last updated <span id="updated"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("updated").textContent = new Date().toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+  </script>
+</body>
+</html>
