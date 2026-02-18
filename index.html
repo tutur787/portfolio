@@ -389,7 +389,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container">
         <header class="section-head">
           <h2>Contact</h2>
@@ -428,20 +428,5 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="muted tiny">Last updated <span id="updated"></span></p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("updated").textContent = new Date().toLocaleDateString(undefined, {
-      year: "numeric",
-      month: "short",
-      day: "numeric"
-    });
-  </script>
 </body>
 </html>
