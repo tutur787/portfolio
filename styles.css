@@ -308,6 +308,12 @@
     background: rgba(0,0,0,.12);
   }
   
+  /* Academics section — 2-col grid, cards sit at top */
+  #academics .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
   /* Responsive */
   @media (max-width: 900px){
     .hero-grid{ grid-template-columns: 1fr; }
