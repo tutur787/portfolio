@@ -12,11 +12,12 @@
     <nav class="nav container">
       <a class="logo" href="#top" aria-label="Go to top">Arthur Acker</a>
       <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="#about">About</a>
         <a href="#academics">Academics</a>
         <a href="#contact">Contact</a>
+        <a class="btn btn-small" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
       </div>
     </nav>
   </header>
@@ -30,9 +31,9 @@
           <h1>Hi, I'm <span class="accent">Arthur Acker</span>.</h1>
 
           <p class="subtitle">
-            Data scientist & analytics professional with a strong foundation in statistics, machine learning,
-            and data engineering. I build data products that turn messy data into clear decisions—especially
-            in sports performance and operational efficiency.
+            I'm a data scientist who loves turning messy, real-world data into things people can actually use —
+            whether that's a competition-winning sports dashboard, a smarter operations tool, or a bot-detection pipeline.
+            I care about the full stack: from cleaning raw data to shipping something clear and useful.
           </p>
 
           <div class="cta-row">
@@ -43,7 +44,7 @@
 
           <div class="mini-stats">
             <div class="stat">
-              <div class="stat-num">UChicago ’26</div>
+              <div class="stat-num">UChicago '26</div>
               <div class="stat-label">MS Applied Data Science</div>
             </div>
             <div class="stat">
@@ -51,8 +52,8 @@
               <div class="stat-label">Core stack</div>
             </div>
             <div class="stat">
-              <div class="stat-num">Open</div>
-              <div class="stat-label">To relocation</div>
+              <div class="stat-num">~90%</div>
+              <div class="stat-label">Search speedup at Hutchinson</div>
             </div>
           </div>
         </div>
@@ -77,8 +78,47 @@
       </div>
     </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>About</h2>
+          <p class="muted">
+            I'm a Master's student in Applied Data Science at the University of Chicago (Expected Aug 2026),
+            building on a B.Sc. in Statistics & Computer Science from McGill (2021–2025).
+            My background combines rigorous statistical theory with hands-on software engineering,
+            giving me a strong foundation across machine learning, statistical inference, and data engineering.
+          </p>
+
+          <p class="muted">
+            I'm particularly drawn to projects where data directly informs decisions — optimizing systems,
+            understanding human behavior, or improving performance in applied settings like sports analytics.
+            Through internships, hackathons, and independent projects, I've learned the importance of writing
+            maintainable code, validating assumptions, and presenting results in ways that both technical and
+            non-technical audiences can act on.
+          </p>
+        </div>
+
+        <aside class="card">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li><span>Programming</span><span class="muted">Python, R, SQL, Bash, Java, HTML, CSS</span></li>
+            <li><span>ML</span><span class="muted">scikit-learn, TensorFlow, PyTorch</span></li>
+            <li><span>Data / BI</span><span class="muted">Tableau, Power BI, Matplotlib, R Shiny, Streamlit</span></li>
+            <li><span>Databases</span><span class="muted">PostgreSQL, MySQL</span></li>
+            <li><span>Statistics</span><span class="muted">Regression, Time Series, GLMs, Bayesian</span></li>
+            <li><span>Languages</span><span class="muted">French (Native), English (Fluent), Spanish (Intermediate)</span></li>
+          </ul>
+
+          <div class="cta-row" style="margin-top: 14px;">
+            <a class="btn btn-ghost btn-small" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <section id="projects" class="section alt">
       <div class="container">
         <header class="section-head">
           <h2>Projects</h2>
@@ -86,6 +126,27 @@
         </header>
 
         <div class="grid">
+
+          <article class="card project">
+            <header class="card-head">
+              <h3>🏆 Soccer Analysis Dashboard — McGill Hackathon</h3>
+              <div class="links">
+              </div>
+            </header>
+
+            <p class="muted">
+              End-to-end pipeline to visualize soccer player metrics and performance insights using R Shiny and
+              web scraping. Presented the final tool to a panel of judges — <strong>earned 1st place</strong> at the competition.
+            </p>
+
+            <div class="chip-row">
+              <span class="chip">R Shiny</span>
+              <span class="chip">Web Scraping</span>
+              <span class="chip">Sports Analytics</span>
+              <span class="chip">Data Visualization</span>
+            </div>
+          </article>
+
           <article class="card project">
             <header class="card-head">
               <h3>Endurance Analytics Dashboard (Strava)</h3>
@@ -116,9 +177,9 @@
             </header>
 
             <p class="muted">
-              Bee Safe is a web application designed to enhance safety awareness and route planning in Montreal.
-              Using a map interface with hex overlays representing safety zones, it helps users choose routes based
-              on safety considerations.
+              Web application to enhance safety awareness and route planning in Montreal.
+              Uses a map interface with hex overlays representing safety zones to help users choose routes
+              based on safety considerations.
             </p>
 
             <div class="chip-row">
@@ -138,8 +199,9 @@
             </header>
 
             <p class="muted">
-              NLP + clustering approach to identify bots injected into a tweet dataset (features like cosine similarity,
-              profanity filtering, emoji detection, and grammar signals). Reported ~90% accuracy.
+              Applied NLP and cosine similarity-based clustering alongside feature engineering (profanity,
+              emoji detection, grammar signals) to identify bots injected into a large tweet dataset.
+              Achieved ~90% accuracy.
             </p>
 
             <div class="chip-row">
@@ -158,7 +220,7 @@
             </header>
 
             <p class="muted">
-              Streamlit educational app to explore asteroid impact scenarios with “confidence level” guardrails,
+              Streamlit educational app to explore asteroid impact scenarios with "confidence level" guardrails,
               plus optional NASA feeds integration for current events/context.
             </p>
 
@@ -178,7 +240,7 @@
             </header>
 
             <p class="muted">
-              Analysis of Taylor Swift’s media presence using web scraping and NLP to identify trends and patterns.
+              Analysis of Taylor Swift's media presence using web scraping and NLP to identify trends and patterns.
               For details, see the written report in the repo.
             </p>
 
@@ -189,30 +251,12 @@
             </div>
           </article>
 
-          <article class="card project">
-            <header class="card-head">
-              <h3>More on GitHub</h3>
-              <div class="links">
-                <a href="https://github.com/tutur787?tab=repositories" target="_blank" rel="noreferrer">All repos</a>
-              </div>
-            </header>
-
-            <p class="muted">
-              See additional repositories (e.g., Sports-Data-Copilot and other experiments).
-            </p>
-
-            <div class="chip-row">
-              <span class="chip">Python</span>
-              <span class="chip">R</span>
-              <span class="chip">HTML/CSS</span>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section alt">
+    <section id="experience" class="section">
       <div class="container">
         <header class="section-head">
           <h2>Experience</h2>
@@ -229,9 +273,9 @@
             </header>
 
             <ul class="bullet-list">
-              <li>Database interface rebuild used by 20+ engineers.</li>
-              <li>Query + indexing optimization: ~90s → &lt;10s search latency.</li>
-              <li>Integrity + debugging scripts: improved maintainability and reduced downtime.</li>
+              <li>Rebuilt internal database interface in Python, adopted by 20+ engineers across the team.</li>
+              <li>Redesigned queries and introduced targeted indexing strategies — cut search latency from ~90s to under 10s (~90% improvement).</li>
+              <li>Developed automated data integrity and debugging scripts, reducing downtime and improving maintainability.</li>
             </ul>
 
             <div class="chip-row">
@@ -252,9 +296,9 @@
             </header>
 
             <ul class="bullet-list">
-              <li>Unified ERP + QMS data, improving cross-team accuracy by 35%.</li>
-              <li>Built a Python interface to convert raw data into structured insights.</li>
-              <li>Increased workflow visibility and supported faster decision-making.</li>
+              <li>Built Python ETL pipelines to integrate and reconcile ERP and QMS data, improving cross-team data accuracy by 35%.</li>
+              <li>Designed a centralized analytics layer to standardize fragmented multi-source data for scalable reporting.</li>
+              <li>Deployed a multi-tab interactive dashboard with dynamic visualizations, reducing manual reporting time and accelerating data-driven decisions.</li>
             </ul>
 
             <div class="chip-row">
@@ -275,65 +319,18 @@
             </header>
 
             <ul class="bullet-list">
-              <li>Implemented a Redmine-based ticketing system for NA IT teams.</li>
-              <li>Automated email ingestion (IMAP/POP3), improving response efficiency by ~30%.</li>
+              <li>Implemented a Redmine-based ticketing system deployed across IT teams in North America.</li>
+              <li>Automated email ingestion via IMAP/POP3, improving response efficiency by ~30%.</li>
             </ul>
 
             <div class="chip-row">
               <span class="chip">Redmine</span>
               <span class="chip">Automation</span>
               <span class="chip">Python</span>
-              <span class="chip">IMAP</span>
-              <span class="chip">POP3</span>
-              <span class="chip">IT Support</span>
+              <span class="chip">IMAP/POP3</span>
             </div>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container about-grid">
-        <div>
-          <h2>About</h2>
-          <p class="muted">
-            I'm a Master's student in Applied Data Science at the University of Chicago (Expected Aug 2026),
-            building on a B.Sc. in Statistics & Computer Science from McGill (2021-2025).
-            My academic background combines rigorous statistical theory with hands-on computer science,
-            giving me a strong foundation in machine learning, statistics, and data engineering.
-          </p>
-          
-          <p class="muted">
-            I'm particularly interested in projects where data can directly inform decisions, whether that's
-            optimizing systems, understanding human behavior, or improving performance in applied settings
-            such as sports analytics. I enjoy working across the full data lifecycle, from collecting and
-            cleaning raw data to building models and presenting results through clear, intuitive visualizations.
-          </p>
-          
-          <p class="muted">
-            Through internships, hackathons, and independent projects, I've learned the importance of writing
-            maintainable code, validating assumptions, and communicating insights to both technical and
-            non-technical audiences. I'm a fast learner, enjoy collaborating in team environments, and I'm
-            always looking for opportunities to apply data-driven approaches to complex, real-world problems.
-          </p>
-        </div>
-
-        <aside class="card">
-          <h3>Skills</h3>
-          <ul class="skill-list">
-            <li><span>Programming</span><span class="muted">Python, R, SQL, Bash, Java, HTML, CSS</span></li>
-            <li><span>ML</span><span class="muted">scikit-learn, TensorFlow, PyTorch</span></li>
-            <li><span>Data / BI</span><span class="muted">Tableau, Power BI, Matplotlib</span></li>
-            <li><span>Databases</span><span class="muted">PostgreSQL, MySQL</span></li>
-            <li><span>Statistics</span><span class="muted">Regression, Time Series, GLMs, Bayesian</span></li>
-            <li><span>Languages</span><span class="muted">French (Native), English (Fluent), Spanish (Intermediate)</span></li>
-          </ul>
-
-          <div class="cta-row" style="margin-top: 14px;">
-            <a class="btn btn-ghost btn-small" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-          </div>
-        </aside>
       </div>
     </section>
 
@@ -343,15 +340,19 @@
           <h2>Academics & Hackathons</h2>
           <p class="muted">Selected advanced coursework and applied competitions.</p>
         </div>
-    
+
         <div class="grid">
           <!-- Coursework -->
           <div class="card">
             <h3>Relevant Coursework</h3>
+            <p class="muted" style="font-size: 0.78rem; margin-bottom: 8px;">University of Chicago</p>
             <ul class="bullet-list">
               <li>Applied Machine Learning</li>
               <li>Fundamentals of Statistical Learning</li>
               <li>Time Series</li>
+            </ul>
+            <p class="muted" style="font-size: 0.78rem; margin: 10px 0 8px;">McGill University</p>
+            <ul class="bullet-list">
               <li>Applied Regression & Generalized Linear Models</li>
               <li>Sampling Theory & Design of Experiments</li>
               <li>Statistical Inference</li>
@@ -359,28 +360,28 @@
               <li>Algorithms & Data Structures</li>
             </ul>
           </div>
-    
+
           <!-- Hackathons -->
           <div class="card">
             <h3>Hackathons</h3>
             <ul class="bullet-list">
               <li>
+                <strong>🏆 Soccer Analysis Dashboard — McGill Hackathon</strong>
+                <span class="muted">
+                  · 1st place. Built a soccer analytics dashboard using R Shiny and web scraping, presented to a panel of judges.
+                </span>
+              </li>
+              <li>
                 <strong>Bee Safe — Concordia Hackathon</strong>
                 <span class="muted">
-                  · Built a safety-aware routing system using graph algorithms and geospatial data
+                  · Built a safety-aware routing system using graph algorithms and geospatial data.
                 </span>
               </li>
               <li>
                 <strong>NASA Space Apps Challenge</strong>
                 <span class="muted">
-                  · Developed an educational asteroid impact simulator with Streamlit
+                  · Developed an educational asteroid impact simulator with Streamlit and NASA data feeds.
                 </span>
-              </li>
-              <li>
-                <strong>Soccer Analysis Dashboard — McGill Hackathon</strong>
-                  <span class="muted">
-                    · Built a soccer analysis dashboard using R Shiny and Webscraping
-                  </span>
               </li>
             </ul>
           </div>
@@ -428,5 +429,9 @@
       </div>
     </section>
   </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
